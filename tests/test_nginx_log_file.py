@@ -14,7 +14,7 @@ TEST_CONFIG = {
 
 @pytest.fixture
 def mock_log_file():
-    """Fixture to create a mock log file."""
+    """Fixture to create a mock log file"""
     mock_log_data = (
         "127.0.0.1 - - [01/Jan/2022:00:00:00 +0000] "
         "\"GET /test-url HTTP/1.1\" 200 0.123\n"
