@@ -1,0 +1,45 @@
+[tool.black]
+line-length = 80
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 80
+skip_gitignore = true
+multi_line_output = 3
+
+[flake8]
+max-line-length = 80
+
+[tool.mypy]
+mypy_path = "./src"
+follow_imports = "silent"
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_any_generics = true
+check_untyped_defs = true
+no_implicit_reexport = true
+
+[tool.poetry]
+name = "log-analyzer"
+version = "0.1.0"
+description = "Анализатор логов"
+authors = ["Ivan1586"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+structlog = "^24.4.0"
+isort = "^5.13.2"
+mypy = "^1.11.2"
+flake8 = "^7.1.1"
+pytest = "^8.3.3"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,35 @@
+[2m2024-10-06 15:13:24[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 15:13:24[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 15:13:24[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 15:13:35[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 15:13:37[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
+[2m2024-10-06 15:14:12[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 15:14:12[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 15:14:12[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 15:14:23[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 15:14:25[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
+[2m2024-10-06 15:14:45[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 15:14:45[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 15:14:45[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 15:14:57[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 15:15:00[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
+[2m2024-10-06 15:17:35[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 15:17:35[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 15:17:35[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 15:17:47[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 15:17:50[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
+[2m2024-10-06 15:25:01[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 15:25:01[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 15:25:01[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 15:25:12[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 15:25:15[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
+[2m2024-10-06 20:21:23[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 20:21:23[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 20:21:23[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 20:21:35[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 20:21:38[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
+[2m2024-10-06 21:07:17[0m [[32m[1minfo     [0m] [1mLog file configured:          [0m [36mfile[0m=[35m/PycharmProjects/Log_analyzer/logs/log_file_2024-10-06.txt[0m
+[2m2024-10-06 21:07:17[0m [[32m[1minfo     [0m] [1mThe configuration is loaded:  [0m [36mconfig[0m=[35m{'REPORT_SIZE': 1000, 'REPORT_DIR': '/reports', 'LOG_DIR': '/nginx_logs', 'LOG_FILES_DIR': '/logs'}[0m
+[2m2024-10-06 21:07:17[0m [[32m[1minfo     [0m] [1mThe last log was found        [0m [36mlog_file_path[0m=[35m/PycharmProjects/Log_analyzer/nginx_logs/nginx-access-ui.log-20170630.gz[0m
+[2m2024-10-06 21:07:28[0m [[32m[1minfo     [0m] [1mGet data from the receipt log [0m [36mtotal_count[0m=[35m2613774[0m [36mtotal_time[0m=[35m1927549.1179975101[0m
+[2m2024-10-06 21:07:31[0m [[32m[1minfo     [0m] [1mReport generated              [0m [36mreport_path[0m=[35m/PycharmProjects/Log_analyzer/reports/report-2024.10.06.html[0m
