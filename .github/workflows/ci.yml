@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pipx install poetry
+          poetry install
+
+      - name: Run linters
+        run: |
+          poetry run black --check src/log_analyzer.py
+          poetry run isort --check src/log_analyzer.py
+          poetry run flake8 src/log_analyzer.py
+          poetry run mypy src/log_analyzer.py
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pipx install poetry
+          poetry install
+
+      - name: Run tests
+        run: |
+          poetry run pytest
