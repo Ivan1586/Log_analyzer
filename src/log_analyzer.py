@@ -110,7 +110,8 @@ def parse_log(file_path: str) -> Generator[LogEntry, None, None]:
         print(f"Error: The file {file_path} was not found.")
     except IOError:
         print(
-            f"Error: An I/O error occurred while handling the file {file_path}."
+            f"Error: An I/O error occurred while"
+            f" handling the file {file_path}."
         )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
