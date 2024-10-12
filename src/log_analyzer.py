@@ -6,9 +6,10 @@ import os
 import statistics
 import sys
 import traceback
+import typing
 from collections import defaultdict, namedtuple
 from datetime import date, datetime
-from typing import Dict, Generator, List, TypedDict, Union
+from typing import Callable, Dict, Generator, List, TextIO, TypedDict, Union
 
 import structlog
 
@@ -80,16 +81,39 @@ def get_last_log(log_dir: str) -> str | None:
 
 def parse_log(file_path: str) -> Generator[LogEntry, None, None]:
     """Generator for extracting data from log's file"""
-    with (
-        gzip.open(file_path, "rt")
-        if file_path.endswith(".gz")
-        else open(file_path, "r")
-    ) as file:
-        for line in file:
-            parts = line.split()
-            url = parts[6]
-            request_time = float(parts[-1])
-            yield LogEntry(url, request_time)
+    opener: Callable[[str, str], Union[gzip.GzipFile, TextIO]]
+
+    if file_path.endswith(".gz"):
+        opener = typing.cast(
+            Callable[[str, str], Union[gzip.GzipFile, TextIO]], gzip.open
+        )
+    else:
+        opener = typing.cast(
+            Callable[[str, str], Union[gzip.GzipFile, TextIO]], open
+        )
+    try:
+        with opener(file_path, "rt") as file:
+            for line in file:
+                parts = line.split()
+
+                if len(parts) < 7:
+                    continue
+                url = parts[6]
+
+                try:
+                    request_time = float(parts[-1])
+                except ValueError:
+                    continue
+
+                yield LogEntry(url, request_time)
+    except FileNotFoundError:
+        print(f"Error: The file {file_path} was not found.")
+    except IOError:
+        print(
+            f"Error: An I/O error occurred while handling the file {file_path}."
+        )
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 
 def analyze_logs(file_path: str) -> List[Dict[str, Union[str, int, float]]]:
@@ -210,6 +234,15 @@ def main() -> None:
             log.warning("There are no nginx_logs to analyze")
             return
         log.info("The last log was found", log_file_path=log_file_path)
+
+        report_date = datetime.now().strftime("%Y.%m.%d")
+        report_path_check = os.path.join(
+            f'{BASE_DIR}{config["REPORT_DIR"]}/report-{report_date}.html'
+        )
+
+        if os.path.exists(report_path_check):
+            log.warning("The log already exists")
+            return
 
         report_data = analyze_logs(log_file_path)
         report_path: str = render_report(
